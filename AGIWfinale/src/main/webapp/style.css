@@ -6,6 +6,18 @@ body {
 	font-size: 12px;
 	background-color: #FFDEC7;
 	margin-top: 0px;
+	margin-bottom: 250px;
+}
+
+a, a:active, a:visited {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	font-size: 20px;
+	color: #000;
+}
+
+a:hover {
+	border-bottom: 0px;
 }
 
 table.tabella {
@@ -29,9 +41,24 @@ h1, h2 {
 #box {
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
+	width: 500px;
 }
 
 ol {
 	padding-left: 20px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
 }

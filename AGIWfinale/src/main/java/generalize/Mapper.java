@@ -66,7 +66,8 @@ public class Mapper {
 							writer.println(parts[0]+"\t"+parts[1]+"\t"+key +"\t"+object+"\t"+relation);
 						}
 						else {
-							writer2.println(parts[0]+"\t"+parts[1]+"\t"+object+"\t"+relation);
+							//writer2.println(parts[0]+"\t"+parts[1]+"\t"+object+"\t"+relation);
+							writer2.println(parts[0]+"\t"+parts[1]+"\t"+" "+"\t"+object+"\t"+relation);
 						}
 					}
 				}
@@ -78,10 +79,13 @@ public class Mapper {
 						for(String object : objects) {
 							String key=object2keyFreeBase.get(object);
 							if(key!=null){
-								writer2.println(subject+"\t"+key +"\t"+object+"\t"+relation);
+								//writer2.println(subject+"\t"+key +"\t"+object+"\t"+relation);
+								writer2.println(" "+"\t"+subject+"\t"+key +"\t"+object+"\t"+relation);
 							}
-							else
-								writer2.println(subject+"\t"+object+"\t"+relation);
+							else{
+								//writer2.println(subject+"\t"+object+"\t"+relation);
+								writer2.println(" "+"\t"+subject+"\t"+" "+"\t"+object+"\t"+relation);
+							}
 						}
 					}
 				}
