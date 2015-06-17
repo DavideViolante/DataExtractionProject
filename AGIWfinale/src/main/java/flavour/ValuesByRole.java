@@ -5,16 +5,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import utils.Player;
 
 public class ValuesByRole {
 
 	public Map<String,List<Player>> createMap(String inputvalues) throws NumberFormatException, IOException {
-		Map<String,List<Player>> role2players = new HashMap<String, List<Player>>();
+		Map<String,List<Player>> role2players = new TreeMap<String, List<Player>>();
 		BufferedReader br = new BufferedReader(new FileReader(inputvalues));
 		String row;
 		while((row=br.readLine()) != null) {
@@ -47,10 +47,10 @@ public class ValuesByRole {
 	}
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		new ValuesByRole().calculate("money/Bundesliga.txt", "money/player_money_bundesliga.txt");
-		new ValuesByRole().calculate("money/Ligue_1.txt", "money/player_money_ligue_1.txt");
-		new ValuesByRole().calculate("money/Premier_league.txt", "money/player_money_premier_league.txt");
-		new ValuesByRole().calculate("money/Primera_division.txt", "money/player_money_primera_division.txt");
-		new ValuesByRole().calculate("money/Serie_a.txt", "money/player_money_serie_a.txt");
+		new ValuesByRole().calculate("Risultati_money/Bundesliga.txt", "Dati_money/player_money_bundesliga.txt");
+		new ValuesByRole().calculate("Risultati_money/Ligue_1.txt", "Dati_money/player_money_ligue_1.txt");
+		new ValuesByRole().calculate("Risultati_money/Premier_league.txt", "Dati_money/player_money_premier_league.txt");
+		new ValuesByRole().calculate("Risultati_money/Primera_division.txt", "Dati_money/player_money_primera_division.txt");
+		new ValuesByRole().calculate("Risultati_money/Serie_a.txt", "Dati_money/player_money_serie_a.txt");
 	}
 }

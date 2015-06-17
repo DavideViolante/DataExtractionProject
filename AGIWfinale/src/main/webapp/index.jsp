@@ -279,7 +279,8 @@
 			    .range([height, 0]);
 			
 			var color = d3.scale.ordinal()
-			    .range(["#973E02",
+			    .range(["#7E3302",
+			            "#973E02",
 			            "#B14802", 
 			            "#CA5202", 
 			            "#E35C02", 
@@ -307,7 +308,7 @@
 			  .append("g")
 			    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 			
-			d3.csv("topExtraStats.csv", function(error, data) {
+			d3.csv("topExtraStats.txt", function(error, data) {
 			  if (error) throw error;
 			
 			  var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "State"; });

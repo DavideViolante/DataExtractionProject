@@ -19,7 +19,7 @@ public class Controller extends HttpServlet {
 	private Map<String, String> comando2azione; 
 	private Map<String, String> esito2pagina;
 
-	@Override 
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String prossimaPagina = null;

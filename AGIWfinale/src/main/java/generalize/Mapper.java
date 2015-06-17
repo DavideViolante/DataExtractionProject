@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Mapper { 
+public class Mapper {
 
 	private Map<String,List<String>> subject2objects =new HashMap<String,List<String>>();
 	private Map<String,String> object2keyFreeBase=new HashMap<String,String>();
@@ -22,6 +22,7 @@ public class Mapper {
 			String line;
 			while ( (line=br.readLine())!= null) {
 				String parts[]=line.split("\t");
+				//System.out.println(parts[1]);
 				String subject = parts[1].trim();
 				if(subject2objects .containsKey(subject))
 					subject2objects .get(subject).add(parts[0]);
@@ -98,12 +99,27 @@ public class Mapper {
 	}
 
 	public static void main(String[]args){
+		/*
 		try {
 			Mapper m=new Mapper("stadi/Stadium_correct_transfermarkt.txt","stadi/architectures.tsv","sports.sports_team.arena_stadium");
-			m.getObject("stadi/teams_NOstadium.tsv","Triple_Stadio_Completate.txt","Triple_Stadio_Completate_senzachiave.txt");
+			m.getObject("stadi/teams_NOstadium.tsv","Triple_Stadio_Completate.txt","Risultati_stadi/completed_triple_stadio_senzachiave.txt");
+		} catch (IOException e) {
+			e.printStackTrace();
+		} */
+
+		try {
+			Mapper m=new Mapper("stadi/Stadium_correct_transfermarkt.txt","stadi/architectures.tsv","sports.sports_team.arena_stadium");
+			m.getObject("stadi/teams_NOstadium.tsv","stadi/completed_triple_stadio_duplicati.txt","Risultati_stadi/completed_triple_stadio_senzachiave.txt");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			Mapper m=new Mapper("nationality/player_nationality_correct_transfermarkt.txt","nationality/countries.tsv","people.person.nationality");
+			m.getObject("nationality/soccerplayers_Nonationality.tsv","nationality/completed_triple_nation_duplicati.txt","Risultati_nationality/completed_triple_nation_senzachiave.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
-
+		
 	}
 }

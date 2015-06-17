@@ -67,10 +67,13 @@ public class Statistics {
 
 	public static void main(String[]args) throws IOException{
 		
-		Statistics statStadium=new Statistics ("teams_NOstadium.tsv","Triple_Stadio_Completate.txt");
-		statStadium.getStatistics("sports.sports_team.arena_stadium","free_base_completed_stadium", "completed_triple_stadium","statistic-stadium.txt");
+		//Statistics statStadium=new Statistics ("teams_NOstadium.tsv","Triple_Stadio_Completate.txt");
+		//statStadium.getStatistics("sports.sports_team.arena_stadium","free_base_completed_stadium", "completed_triple_stadium","statistic-stadium.txt");
 		
-		Statistics statNation=new Statistics ("soccerplayers_Nonationality.tsv","Triple_Nation_Completate.txt");
-		statNation.getStatistics("people.person.nationality","free_base_completed_nation", "completed_triple_nation","statistic-nationality.txt");
+		Statistics statStadium=new Statistics ("stadi/teams_NOstadium.tsv","stadi/completed_triple_stadio_duplicati.txt");
+		statStadium.getStatistics("sports.sports_team.arena_stadium","Risultati_stadi/free_base_completed_stadium.txt", "Risultati_stadi/completed_triple_stadium","statistic-stadium.txt");
+		
+		Statistics statNation=new Statistics ("nationality/soccerplayers_Nonationality.tsv","nationality/completed_triple_nation_duplicati.txt");
+		statNation.getStatistics("people.person.nationality","Risultati_nationality/free_base_completed_nation.txt", "Risultati_nationality/completed_triple_nation.txt","statistic-nationality.txt");
 	}
 }

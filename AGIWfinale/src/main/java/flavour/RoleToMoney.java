@@ -107,10 +107,10 @@ public class RoleToMoney {
 
 	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 		RoleToMoney rtm = new RoleToMoney();
-		rtm.getInfos("money/player_money_bundesliga.txt","http://www.transfermarkt.com/bundesliga/marktwerte/wettbewerb/L1/pos//detailpos//altersklasse/alle");
-		rtm.getInfos("money/player_money_ligue_1.txt","http://www.transfermarkt.com/ligue-1/marktwerte/wettbewerb/FR1/pos//detailpos//altersklasse/alle");
-		rtm.getInfos("money/player_money_premier_league.txt","http://www.transfermarkt.com/premier-league/marktwerte/wettbewerb/GB1/pos//detailpos//altersklasse/alle");
-		rtm.getInfos("money/player_money_primera_division.txt","http://www.transfermarkt.com/primera-division/marktwerte/wettbewerb/ES1/pos//detailpos//altersklasse/alle");
-		rtm.getInfos("money/player_money_serie_a.txt","http://www.transfermarkt.com/serie-a/marktwerte/wettbewerb/IT1/pos//detailpos//altersklasse/alle");
+		rtm.getInfos("Dati_money/player_money_bundesliga.txt","http://www.transfermarkt.com/bundesliga/marktwerte/wettbewerb/L1/pos//detailpos//altersklasse/alle");
+		rtm.getInfos("Dati_money/player_money_ligue_1.txt","http://www.transfermarkt.com/ligue-1/marktwerte/wettbewerb/FR1/pos//detailpos//altersklasse/alle");
+		rtm.getInfos("Dati_money/player_money_premier_league.txt","http://www.transfermarkt.com/premier-league/marktwerte/wettbewerb/GB1/pos//detailpos//altersklasse/alle");
+		rtm.getInfos("Dati_money/player_money_primera_division.txt","http://www.transfermarkt.com/primera-division/marktwerte/wettbewerb/ES1/pos//detailpos//altersklasse/alle");
+		rtm.getInfos("Dati_money/player_money_serie_a.txt","http://www.transfermarkt.com/serie-a/marktwerte/wettbewerb/IT1/pos//detailpos//altersklasse/alle");
 	}
 }

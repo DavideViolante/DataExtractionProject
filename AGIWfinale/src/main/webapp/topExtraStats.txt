@@ -1,0 +1,6 @@
+State,Attacking Midfield,Central Midfield,Centre Back,Centre Forward,Defensive Midfield,Keeper,Left Midfield,Left Wing,Left Back,Right Midfield,Right Wing,Right Back,Secondary Striker
+Primera Division,27.8,17.33,17.83,21.58,18.0,8.94,0.1,43.28,15.71,0.1,31.18,15.0,23.5,
+Premier League,28.3,24.08,19.0,25.46,17.44,17.11,0.1,27.91,17.83,14.0,27.7,15.0,32.5,
+Bundesliga,20.1,15.16,16.07,13.25,13.9,16.08,7.0,22.25,19.0,0.1,14.06,8.5,23.0,
+Serie A,13.14,17.6,11.35,18.5,10.16,12.25,17.25,12.83,9.16,0.1,17.05,9.14,15.0,
+Ligue 1,9.11,12.83,12.26,10.0,8.13,8.5,0.1,8.37,7.3,0.1,10.81,6.35,0.1,
