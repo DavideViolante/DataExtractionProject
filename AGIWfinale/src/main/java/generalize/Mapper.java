@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Mapper {
+public class Mapper { 
 
 	private Map<String,List<String>> subject2objects =new HashMap<String,List<String>>();
 	private Map<String,String> object2keyFreeBase=new HashMap<String,String>();

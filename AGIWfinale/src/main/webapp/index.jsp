@@ -57,7 +57,7 @@
 			
 			
 			<tr>
-				<td colspan="2" style="padding-top:50px"><h1><img src="images/ball.png">Extra</h1><br></td>
+				<td colspan="2" style="padding-top:50px"><h1><img src="images/extraball.png">Extra</h1><br></td>
 			</tr>
 			<tr>
 				<td colspan="2"><span></span></td>

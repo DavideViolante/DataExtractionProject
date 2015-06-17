@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 
 public class AzioneStats extends Azione {
 
-	@Override
+	@Override 
 	public String esegui(HttpServletRequest request) throws ServletException, IOException, InterruptedException, ExecutionException {
 
 		String esitoAzione = "statsKO";
