@@ -5,16 +5,15 @@ import java.util.Map;
 
 public class DifferentContains {
 
-	public boolean contains(String toCorrect_sw,String parts_frbs1_sw, StopWord sw) {
+	public boolean contains(String toCorrect_sw, String parts_frbs1_sw, StopWord sw) {
 
 		int match = 0;
-		String w1,w2;
+		String w1, w2;
 
 		if(toCorrect_sw.split(" ").length < parts_frbs1_sw.split(" ").length) {
 			w1 = toCorrect_sw;
 			w2 = parts_frbs1_sw;
-		}
-		else {
+		} else {
 			w1 = parts_frbs1_sw;
 			w2 = toCorrect_sw;
 		}
@@ -29,7 +28,7 @@ public class DifferentContains {
 			if(map.containsKey(part))
 				match++;
 		
-		return match==parts2.length;
+		return match == parts2.length;
 
 	}
 

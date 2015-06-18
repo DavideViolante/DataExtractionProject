@@ -30,14 +30,6 @@
 					To make this happen we crawled a famous and big website about this topic: Transfermarkt.com.
 					Using XPath queries we iteratively and automatically selected the data we wanted and we used it to extend the Freebase triples!
 					</p>
-					<div style="display:none" id="box">
-						<ol>
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-						</ol>
-					</div>
 					<h1>Results</h1><br>
 				</td>
 			</tr>
@@ -47,12 +39,12 @@
 				<td><div id="pieChart2"></div></td>
 			</tr>
 			<tr style="text-align:center">
-				<td><a href="pdf/triplepn.pdf">View triples with key (PDF)</a></td>
-				<td><a href="pdf/triplecs.pdf">View triples with key (PDF)</a></td>
+				<td><a href="pdf/Lackbase_results-Player-Nationality-Foglio1.pdf">View triples with key (PDF)</a></td>
+				<td><a href="pdf/Lackbase_results-Club-Stadium-Foglio1.pdf">View triples with key (PDF)</a></td>
 			</tr>
 			<tr style="text-align:center">
-				<td><a href="pdf/triplepn2.pdf">View triples without key (PDF)</a></td>
-				<td><a href="pdf/triplecs2.pdf">View triples without key (PDF)</a></td>
+				<td><a href="pdf/Lackbase_results-Player-Nationality(no_key)part1e2-Foglio1.pdf">View triples without key (PDF)</a></td>
+				<td><a href="pdf/Lackbase_results-Club-Stadium(no_key)-Foglio1.pdf">View triples without key (PDF)</a></td>
 			</tr>
 			
 			
